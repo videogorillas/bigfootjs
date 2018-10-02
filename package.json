@@ -1,8 +1,8 @@
 {
   "name": "bigfootjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "",
+  "main": "dist/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

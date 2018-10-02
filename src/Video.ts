@@ -44,7 +44,7 @@ export interface IVideo {
     clipName: string;
 }
 
-class Video implements IVideo {
+export class Video implements IVideo {
     chunksTotal: number;
     chunksUploaded: number;
     clipName: string;

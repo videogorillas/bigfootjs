@@ -1,1 +1,1 @@
-{"version":3,"file":"Video.js","sourceRoot":"","sources":["../src/Video.ts"],"names":[],"mappings":""}
+{"version":3,"file":"Video.js","sourceRoot":"","sources":["../src/Video.ts"],"names":[],"mappings":";;AAAA,iDAA0C;AA8C1C,MAAa,KAAK;IAoBP,WAAW;QACd,OAAO,IAAI,sBAAY,CAAC,IAAI,CAAC,WAAW,EAAE,IAAI,CAAC,aAAa,EAAE,IAAI,CAAC,YAAY,CAAC,CAAC;IACrF,CAAC;CAEJ;AAxBD,sBAwBC"}

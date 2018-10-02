@@ -14,4 +14,13 @@ function containsFrame(range, frameNumber) {
     return this.length != 0 && (frameNumber >= range.frame && frameNumber + 1 <= range.frame + range.length);
 }
 exports.containsFrame = containsFrame;
+function getTimecodeRange(range, timecode) {
+    if (range.length) {
+        let startFrame = range.frame;
+        let endFrame = range.frame + range.length - 1;
+        return { start: timecode.getTimecodeAtFrame(startFrame), end: timecode.getTimecodeAtFrame(endFrame) };
+    }
+    return null;
+}
+exports.getTimecodeRange = getTimecodeRange;
 //# sourceMappingURL=Range.js.map
