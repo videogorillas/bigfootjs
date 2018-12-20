@@ -23,20 +23,20 @@ interface LogLevel {
 }
 
 interface PlayerOptions {
-    logLevel: LogLevel;
-    enableCORS: boolean; // this will actually allow CORS requests for video elements across origins
-    staticVideoSrc: boolean;
-    hotkeys: boolean;
-    serverUrl: string;
-    playlist: boolean;
-    search: boolean;
-    streaming: string; // enum? : “vfile” / “cutlist” / “dash” - streaming type. Default is “dash”.
-    plugins: string[];//: ['filmstrip', 'waveform', 'selections'] - an array of available plugins
-    theme: string;
-    preservePlaybackRate: boolean; // true = resume playback at previous rate after pause, false = reset to 1x
-    allowCrossSiteCredentials: boolean; // true = allow cookies etc in cross-domain requests
+    logLevel?: LogLevel;
+    enableCORS?: boolean; // this will actually allow CORS requests for video elements across origins
+    staticVideoSrc?: boolean;
+    hotkeys?: boolean;
+    serverUrl?: string;
+    playlist?: boolean;
+    search?: boolean;
+    streaming?: string; // enum? : “vfile” / “cutlist” / “dash” - streaming type. Default is “dash”.
+    plugins?: string[];//: ['filmstrip', 'waveform', 'selections'] - an array of available plugins
+    theme?: string;
+    preservePlaybackRate?: boolean; // true = resume playback at previous rate after pause, false = reset to 1x
+    allowCrossSiteCredentials?: boolean; // true = allow cookies etc in cross-domain requests
     // DRMOptions drm;
-    queryParams: any; //Map<String,String>  appended to all requests (except drm license acquisition requests)
+    queryParams?: any; //Map<String,String>  appended to all requests (except drm license acquisition requests)
 }
 
 export interface Player {
