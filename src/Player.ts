@@ -4,7 +4,39 @@ interface Subtitles {
 interface PlayerAudioTrack {
 }
 
-interface Timeline {
+export interface TapeTimecode {
+    getTimecodeAtFrame(frame: number): string;
+    getFrameByTimecode(timecode: string): number;
+    getTapeFps(): number;
+    getTimecodedDuration(): string;
+    isDropFrame(): boolean;
+}
+
+export interface Timeline {
+    getTimeScale(): number;
+    getFrameCount(): number;
+    getTvBySec(seconds: number): number;
+    getLastFrame(): number;
+    getLastTv(): number;
+    getTvByTimecode(timecode: string): number;
+    getTvByFrame(frame: number): number;
+    getFrameByTv(tv: number): number;
+    getFrameBySec(seconds: number): number;
+    getFrameByTimecode(timecode: string): number;
+    getFrameByMillis(milliseconds: number): number;
+    floorTv(tv: number): number;
+    boundsFn(frame: number): number;
+    getSecByFrame(frame: number): number;
+    getSecByTv(tv: number): number;
+    getMillisByTv(tv: number): number;
+    getTapeByTv(tv: number): string;
+    getTapeByFrame(frame: number): string;
+    getTapeBySec(seconds: number): string;
+    getTapeTimecode(): TapeTimecode;
+    getDurationSec(): number;
+    getSeekableDurationSec(): number;
+    getStartUTCTimestamp(): string;
+    getUTCTimestampBySec(seconds: number): string;
 }
 
 interface TimeSample {
