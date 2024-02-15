@@ -12,7 +12,7 @@ export interface Strip extends Coordinates {
 export interface FrameStrip extends Strip {
     startFrame: number;
 }
-export declare type DrawHandler = (diffRange: DiffRange, frameNumber: number, src: Coordinates, dest: Coordinates) => void;
+export type DrawHandler = (diffRange: DiffRange, frameNumber: number, src: Coordinates, dest: Coordinates) => void;
 declare class ThumbsStrip {
     cols: number;
     rows: number;

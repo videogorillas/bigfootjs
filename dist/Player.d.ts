@@ -40,6 +40,8 @@ interface TimeSample {
 interface FilmStripDrawer {
 }
 interface VGPlugin {
+    setAPI(playerApi: VGPlayerPluginApi): any;
+    getId(): string;
 }
 interface TimeRange {
 }
@@ -131,5 +133,9 @@ export interface VGPlayerPublicApi {
     isLive(): boolean;
     setStartUTCTimestamp(timestamp: string): any;
     getStartUTCTimestamp(): string;
+}
+export interface VGPlayerPluginApi extends VGPlayerPublicApi {
+    startQuickSeek(): any;
+    endQuickSeek(): any;
 }
 export {};

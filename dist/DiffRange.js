@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MatchTypeColors = exports.MatchType = void 0;
 var MatchType;
 (function (MatchType) {
     MatchType["ADDED"] = "ADDED";
@@ -9,7 +10,7 @@ var MatchType;
     MatchType["MOVED"] = "MOVED";
     MatchType["MOVED_FROM"] = "MOVED_FROM";
     MatchType["MOVED_TO"] = "MOVED_TO";
-})(MatchType = exports.MatchType || (exports.MatchType = {}));
+})(MatchType || (exports.MatchType = MatchType = {}));
 var MatchTypeColors;
 (function (MatchTypeColors) {
     MatchTypeColors["ADDED"] = "darkcyan";
@@ -19,5 +20,5 @@ var MatchTypeColors;
     MatchTypeColors["MOVED"] = "orange";
     MatchTypeColors["MOVED_FROM"] = "fuchsia";
     MatchTypeColors["MOVED_TO"] = "mediumseagreen";
-})(MatchTypeColors = exports.MatchTypeColors || (exports.MatchTypeColors = {}));
+})(MatchTypeColors || (exports.MatchTypeColors = MatchTypeColors = {}));
 //# sourceMappingURL=DiffRange.js.map
