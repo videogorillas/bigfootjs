@@ -10,7 +10,7 @@ function findRange(frameNumber, entries) {
     }
     let mid = entries.length / 2 | 0;
     let range = entries[mid][1];
-    if (Range_1.containsFrame(range, frameNumber)) {
+    if ((0, Range_1.containsFrame)(range, frameNumber)) {
         return entries[mid];
     }
     if (range.frame > frameNumber) {
@@ -103,7 +103,7 @@ class ThumbsStrip {
                 // frames to draw in destination
                 const frames = Math.min(spaceInDestinationRow, framesInSourceRow, framesLeft);
                 let sourceFrameCoordinates = this.frameCoordinates(sourceFrame);
-                let src = Object.assign({}, sourceFrameCoordinates, { width: frames * frameWidth, frames, startFrame: sourceFrame });
+                let src = Object.assign(Object.assign({}, sourceFrameCoordinates), { width: frames * frameWidth, frames, startFrame: sourceFrame });
                 let dY = (rows.length - 1) * this.destFrameSize.frameHeight;
                 let dest = {
                     x: dX,

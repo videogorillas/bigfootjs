@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.TimecodeDiffRange = void 0;
 const DiffRange_1 = require("./DiffRange");
 const Range_1 = require("./Range");
 class TimecodeDiffRange {
@@ -21,10 +22,10 @@ class TimecodeDiffRange {
                 break;
         }
         if (r1.length) {
-            tcr1 = Range_1.getTimecodeRange(r1, tc1);
+            tcr1 = (0, Range_1.getTimecodeRange)(r1, tc1);
         }
         if (r2.length) {
-            tcr2 = Range_1.getTimecodeRange(r2, tc2);
+            tcr2 = (0, Range_1.getTimecodeRange)(r2, tc2);
         }
         return new TimecodeDiffRange(tcr1, tcr2, matchType);
     }

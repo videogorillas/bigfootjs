@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getTimecodeRange = exports.containsFrame = exports.Range = void 0;
 class Range {
     constructor(frame, length) {
         this.frame = frame;
