@@ -71,6 +71,7 @@ interface PlayerOptions {
     allowCrossSiteCredentials?: boolean; // true = allow cookies etc in cross-domain requests
     // DRMOptions drm;
     queryParams?: any; //Map<String,String>  appended to all requests (except drm license acquisition requests)
+    headers?: any; //Map<String,String>  sent with all requests (except drm license acquisition requests)
 }
 
 export interface Player {
