@@ -61,6 +61,7 @@ interface PlayerOptions {
     preservePlaybackRate?: boolean;
     allowCrossSiteCredentials?: boolean;
     queryParams?: any;
+    headers?: any;
 }
 export interface Player {
     new (container: HTMLElement, options: PlayerOptions): VGPlayerPublicApi;
